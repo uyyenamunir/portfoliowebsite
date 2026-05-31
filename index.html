@@ -3,67 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css"> 
-    <!-- Boxicons CSS link removed -->
+    <title>Uyyena Munir | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
     <header class="header">
-
-        <a href="#home" class="logo">
-            Uyyena <span>Munir</span>
-        </a>
-        <i class="bx bx-menu" id="menu-icon"></i>
-
+        <a href="#home" class="logo">Uyyena <span>Munir</span></a>
+        <div class="menu-icon" id="menu-icon">☰</div>
         <nav class="navbar">
-            <a href="#home">Home</a>
-             <a href="#about">About</a>
-              <a href="#servces">Services</a>
-               <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
-        <button class="gradient-btn">Contact Me</button>
+        <button class="gradient-btn" id="contactBtn">Contact Me</button>
     </header>
 
+    <!-- Home Section -->
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, It's <span>Uyyena</span></h1>
-            <h3>
-                I'm a <span>Web Developer</span>
-            </h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, consequatur sequi, vel similique omnis illum itaque mollitia fugit ullam quibusdam, doloribus neque placeat nulla qui sit expedita reiciendis ea asperiores!</p>
-            
-            <!-- Social Icons Section -->
+            <h3>I'm a <span>Web Developer</span></h3>
+            <p>Passionate front-end developer crafting beautiful, responsive web experiences. I specialize in modern JavaScript, React, and creating intuitive user interfaces that bring ideas to life.</p>
             <div class="social-icons">
-                <a href="#">
-                    <img src="GitHub-Logo-White.png" alt="GitHub" class="social-icon">
-                </a>
-                <a href="#">
-                    <img src="linkedin-logo.png" alt="LinkedIn" class="social-icon">
-                </a>
-                <a href="#">
-                    <img src="instagram-logo.png" alt="Instagram" class="social-icon">
-                </a>
-                <a href="#">
-                    <img src="twitter-x-logo.png" alt="Twitter" class="social-icon">
-                </a>
+                <a href="#" aria-label="GitHub"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z'/%3E%3C/svg%3E" class="social-icon" alt="GitHub"></a>
+                <a href="#" aria-label="LinkedIn"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z'/%3E%3C/svg%3E" class="social-icon" alt="LinkedIn"></a>
+                <a href="#" aria-label="Instagram"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z'/%3E%3C/svg%3E" class="social-icon" alt="Instagram"></a>
+                <a href="#" aria-label="Twitter"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z'/%3E%3C/svg%3E" class="social-icon" alt="Twitter"></a>
             </div>
-
-            <!-- Button Group - MOVED OUTSIDE social-icons -->
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
+                <a href="#" class="btn">Hire Me</a>
                 <a href="#contact" class="btn">Contact</a>
             </div>
-
         </div>
-
         <div class="home-image">
-            <img src="me.jpg" alt="">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='90' fill='%23ea580c'/%3E%3Ctext x='100' y='130' text-anchor='middle' fill='white' font-size='40' font-weight='bold'%3EU%3C/text%3E%3C/svg%3E" alt="Profile">
         </div>
     </section>
 
-   <script src="script.js" ></script>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-header">About <span>Me</span></h2>
+        <div class="about-content">
+            <p>I'm a passionate Web Developer with expertise in building modern, responsive websites and web applications. With a strong foundation in HTML, CSS, JavaScript, and React, I create seamless digital experiences that combine aesthetics with functionality.</p>
+            <p>I believe in writing clean, maintainable code and continuously learning new technologies to stay ahead in the fast-evolving web development landscape.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-header">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">⚛️</div>
+                <h3>React.js</h3>
+                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                <div class="skill-percent">85%</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🟨</div>
+                <h3>JavaScript</h3>
+                <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                <div class="skill-percent">90%</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>HTML5/CSS3</h3>
+                <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                <div class="skill-percent">95%</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>Tailwind CSS</h3>
+                <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                <div class="skill-percent">80%</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🐍</div>
+                <h3>Python</h3>
+                <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                <div class="skill-percent">75%</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🗄️</div>
+                <h3>Node.js</h3>
+                <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                <div class="skill-percent">70%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Calculator -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-header">Featured <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Smart Calculator App</h3>
+                    <p>A fully functional calculator with modern UI, supporting basic arithmetic operations, clear function, and real-time display.</p>
+                    <div class="project-tech"><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+                    <button class="project-link" id="tryCalculatorBtn">Try Calculator ↓</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>E-commerce Dashboard</h3>
+                    <p>Responsive admin dashboard with product management, analytics charts, and user-friendly interface.</p>
+                    <div class="project-tech"><span>React</span><span>Chart.js</span><span>CSS</span></div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>Modern, responsive portfolio with smooth animations, project showcase, and contact form integration.</p>
+                    <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JS</span></div>
+                    <a href="#" class="project-link">Live Demo →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculator Widget Embedded -->
+        <div class="calculator-wrapper" id="calculator-widget">
+            <h3>🔢 Interactive <span>Calculator</span></h3>
+            <div class="calculator">
+                <input type="text" id="calc-screen" class="calculator-screen" readonly value="0">
+                <div class="calculator-buttons">
+                    <button class="calc-btn clear" data-action="clear">AC</button>
+                    <button class="calc-btn operator" data-op="/">/</button>
+                    <button class="calc-btn operator" data-op="*">×</button>
+                    <button class="calc-btn operator" data-op="-">-</button>
+                    <button class="calc-btn" data-num="7">7</button>
+                    <button class="calc-btn" data-num="8">8</button>
+                    <button class="calc-btn" data-num="9">9</button>
+                    <button class="calc-btn operator" data-op="+">+</button>
+                    <button class="calc-btn" data-num="4">4</button>
+                    <button class="calc-btn" data-num="5">5</button>
+                    <button class="calc-btn" data-num="6">6</button>
+                    <button class="calc-btn equals" data-action="equals">=</button>
+                    <button class="calc-btn" data-num="1">1</button>
+                    <button class="calc-btn" data-num="2">2</button>
+                    <button class="calc-btn" data-num="3">3</button>
+                    <button class="calc-btn" data-num="0">0</button>
+                    <button class="calc-btn" data-num=".">.</button>
+                    <button class="calc-btn clear" data-action="delete">⌫</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-header">Contact <span>Me</span></h2>
+        <div class="contact-container">
+            <form class="contact-form" id="contactForm">
+                <div class="input-group"><input type="text" placeholder="Your Name" required id="contactName"></div>
+                <div class="input-group"><input type="email" placeholder="Email Address" required id="contactEmail"></div>
+                <div class="input-group"><textarea rows="5" placeholder="Your Message" required id="contactMessage"></textarea></div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Uyyena Munir | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
